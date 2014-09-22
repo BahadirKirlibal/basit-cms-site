@@ -24,7 +24,7 @@
 
 			if (isset($_GET['id'])) {
 
-				$sayfa_id = $_GET['id'];
+				$sayfa_id = addslashes(htmlspecialchars($_GET['id']));
 
 				// icerikler tablosunda ki veriyi gelen id degerine göre yani $sayfa_id ye göre listeliyoruz
 				$run = mysql_query("SELECT * FROM icerikler WHERE id=$sayfa_id");
