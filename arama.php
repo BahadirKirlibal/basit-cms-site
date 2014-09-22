@@ -24,7 +24,7 @@
 
 			if (isset($_GET['ara'])) {
 
-				echo $arama_id = $_GET['value'];
+				$arama_id = addslashes(htmlspecialchars($_GET['value']));
 
 				$arama_sorgu = mysql_query("SELECT * FROM icerikler WHERE keyword LIKE '%$arama_id%'") or die(mysql_error());
 
