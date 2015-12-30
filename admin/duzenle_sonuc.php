@@ -47,38 +47,6 @@
 }		
 
 	
-/*
-		
-
-		if ($baslik =="" or $yazar =="" or $keyword =="" or $image =="" or  $icerik =="") {
-				
-			echo "Lütfen boş alan bırakmayınız..";
-			header("Refresh: 2; icerikler.php");
-
-		}else{
-
-			 move_uploaded_file($image_tmp,"../images/$image");
-
-			 $query = mysql_query("UPDATE icerikler SET baslik='$baslik', tarih='$tarih', 
-			 	yazar='$yazar',image='$image', keyword='$keyword', icerik='$icerik' WHERE id='$id'");
-
-			 if ($query) {
-			 		
-			 		echo " Başarıyla Güncellendi ";
-	
-			 		header("Refresh: 2; icerikler.php");
-			 }else{
-
-			 		echo "duzenle hatası".mysql_error();
-			 }
-
-		}
-
-
-
-
-*/	
-
 
 
 ?>
